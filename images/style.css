@@ -1,0 +1,219 @@
+body {
+    background-image: linear-gradient(#6078A7, #36435D);
+    height: 100%;
+    margin: 0;
+}
+
+#image {
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+#header {
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    padding-top: 10px;
+    width: 100%;
+}
+
+#top-left {
+    font-family: 'Damion' ;
+    color: white;
+    font-weight: 20;
+    padding-left: 30px;
+}
+
+.nav-link2 {
+    padding-right: 30px;
+    padding-bottom: 6px;
+    color: white;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+.nav-link2:hover {
+    color: lightgray;
+}
+
+#headline {
+    text-align: center;
+    font-family: helvetica;
+    color: white;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+#wholewhole {
+    display: grid;
+    grid-template-columns: 1fr 400px 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "header1 header2 header3"
+        "advert content1 content2"
+        "footer1 footer2 footer3";
+}
+
+#titlebox1 {
+    display: grid;
+    width: 400px;
+    justify-self: center;
+}
+
+#titlebox2 {
+    display: grid;
+    width: 400px;
+    justify-self: center;
+    grid-area: content1;
+}
+
+#titlebox3 {
+    display: grid;
+    width: 400px;
+    justify-self: center;
+    grid-area: footer2;
+}
+
+#liltitle {
+    justify-self: start;
+    margin-bottom: 0px;
+    font-family: helvetica;
+    color: white;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+#minititle {
+    justify-self: start;
+    margin-top: 5px;
+    font-family: helvetica;
+    color: lightgray;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+#svg1 {
+    padding-right: 10px;
+    height: 26px;
+    align-self: center;
+    justify-self: end;
+    grid-area: header1;
+    filter: invert(1) brightness(85%);
+}
+
+#svg2 {
+    padding-right: 10px;
+    height: 30px;
+    align-self: center;
+    justify-self: end;
+    grid-area: advert;
+    filter: invert(1) brightness(85%);
+}
+
+#svg3 {
+    padding-right: 10px;
+    height: 26px;
+    align-self: center;
+    justify-self: end;
+    grid-area: footer1;
+    filter: invert(1) brightness(85%);
+}
+
+#price {
+    text-align: center;
+    font-family: helvetica;
+    color: white;
+    font-weight: lighter;
+}
+
+#titles {
+    text-align: center;
+    font-family: helvetica;
+    color: white;
+}
+
+#formcover {
+    display: flex;
+    justify-content: center;
+}
+
+#form:hover {
+    filter: brightness(82%);
+}
+
+@media screen and (max-width: 980px) {
+    #header {
+        height: 70px;
+    }
+
+    #top-left {
+        font-size: 75px;
+    }
+
+    #cartIMG {
+        width: 200px;
+    }
+    
+    #headline {
+        font-size: 45px;
+    }
+
+    #wholewhole {
+        grid-template-columns: 1fr 700px 1fr;
+    }
+
+    #svg1 {
+    height: 60px;
+    }
+
+    #svg2 {
+    height: 70px;
+    }
+
+    #svg3 {
+    height: 60px;
+    }
+
+    #titlebox1 {
+        width: 650px;
+    }
+
+    #titlebox2 {
+        width: 650px;
+    }
+
+    #titlebox3 {
+        width: 650px;
+    }
+
+    #liltitle {
+        font-size: 45px;
+    }
+
+    #minititle {
+        font-size: 35px;
+    }
+
+    #image {
+        background: gray;
+        width: 100%;
+    }
+
+    #add2CartIMG {
+        width: 230px;
+    }
+
+    #titles {
+        font-size: 40px;
+        letter-spacing: 3px;
+    }
+
+    #price {
+        font-size: 30px;
+    }
+}
